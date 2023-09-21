@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>JS31</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Форма регистрации</h1>
+      <form class="form">
+        <div class="form-box">
+          <input
+            class="input"
+            placeholder="Номер телефона"
+            type="text"
+            id="phone"
+          />
+          <div class="error" id="phone-error">1</div>
+        </div>
+        <div class="form-box">
+          <input class="input" type="email" id="email" placeholder="Email:" />
+          <div class="error" id="email-error">2</div>
+        </div>
+        <div class="form-box">
+          <input class="input" type="date" id="birthdate" />
+          <div class="error" id="birthdate-error">3</div>
+        </div>
+        <div class="form-box">
+          <input
+            class="input"
+            type="password"
+            id="password"
+            placeholder="Пароль:"
+          />
+          <div class="error" id="password-error">4</div>
+        </div>
+        <div class="form-box">
+          <input class="input" type="text" id="fullname" placeholder="ФИО:" />
+          <div class="error" id="fullname-error">5</div>
+        </div>
+        <div>
+          <input class="btn" type="submit" value="Зарегистрироваться" />
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
